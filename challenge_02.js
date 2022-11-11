@@ -16,24 +16,36 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
-let name = prompt("Bitte Namen eingeben: ");
-let age = Number(prompt("Wie alt bist du?"));
+let userName = prompt("Bitte Namen eingeben: ");
+let userAge = Number(prompt("Wie alt bist du?"));
 
-// switch (true) {
-//     case age <= 5:
-//         console.log(name, "bekommt Milch.");
-//         break;
+switch (true) {
+    case userAge <= 5:
+        console.log(userName, "bekommt Milch.");
+        break;
 
-//     case age <= 12:
-//         console.log(name, "bekommt Saft.");
-//         break;
+    case userAge <= 12:
+        console.log(userName, "bekommt Saft.");
+        break;
 
-//     case age <= 17:
-//         console.log(name, "bekommt Cola.");
-//         break;
+    case userAge <= 17:
+        console.log(userName, "bekommt Cola.");
+        break;
 
-//     default:
-//         console.log(name, "bekommt Wein.")
-//         break;
-// }
+    default:
+        console.log(userName, "bekommt Wein.")
+        break;
+}
 
+if (userAge <= 5) {
+    console.log(userName, "bekommt mülch.");    
+}
+else if (userAge > 5 && age <= 12){
+    console.log(userName, "bekommt säft.");
+}
+else if (userAge > 12 && age <= 17){
+    console.log(userName, "bekommt cherry-coke.");
+}
+else {
+    console.log(userName, "dürf scho wein dringn.");
+}
